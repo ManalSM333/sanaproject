@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sanaproject/core/base/components/base_selected_listview.dart';
+import 'package:sanaproject/core/base/components/bottom_navigation_bar_widget.dart';
 import 'package:sanaproject/core/base/components/button/base_button.dart';
 import 'package:sanaproject/core/base/state/base_state.dart';
 import 'package:sanaproject/core/init/theme/color/color_theme.dart';
@@ -80,7 +81,10 @@ class SettingsView extends GetView<OnboardingController> {
                       ),
                       child: BaseButton(
                         buttonText: 'save'.tr,
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.off(
+                              const BottomNavigationBarView(selectedIndex: 0));
+                        },
                       ),
                     )
                   ],
