@@ -6,11 +6,7 @@ class SplashController extends GetxController {
   @override
   void onInit() {
     Get.updateLocale(const Locale('en_US'));
-    routePage();
-    super.onInit();
-  }
 
-  routePage() {
-    Future.delayed(const Duration(seconds: 3), () {});
+    super.onInit();
   }
 }
