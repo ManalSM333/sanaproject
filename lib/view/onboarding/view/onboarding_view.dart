@@ -41,6 +41,7 @@ class OnboardingView extends GetView<OnboardingController> {
                           padding: EdgeInsets.only(
                             top: Utility(context).dynamicWidth(0.070),
                           ),
+                          //this bit  of code is to display the icon in the onboarding screen
                           child: SvgPicture.asset(
                             onboardingController.itemList[index].imagePath!,
                             width: Utility(context).dynamicWidth(0.33),
@@ -54,9 +55,12 @@ class OnboardingView extends GetView<OnboardingController> {
                           style: Utility(context).textTheme.titleLarge,
                           textAlign: TextAlign.center,
                         ),
+                        const SizedBox(
+                          height: 10,
+                        ),
                         Padding(
                           padding: EdgeInsets.only(
-                            top: Utility(context).dynamicWidth(0.75),
+                            top: Utility(context).dynamicWidth(0.65),
                           ),
                           child: SizedBox(
                             width: Utility(context).dynamicWidth(0.80),
