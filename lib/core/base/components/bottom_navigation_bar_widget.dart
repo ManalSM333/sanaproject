@@ -21,7 +21,6 @@ Map<String, GlobalKey<NavigatorState>> navigatorKeys = {
   "Page1": GlobalKey<NavigatorState>(),
   "Page2": GlobalKey<NavigatorState>(),
   "Page3": GlobalKey<NavigatorState>(),
-  "Page4": GlobalKey<NavigatorState>(),
 };
 
 class BottomNavigationBarView extends StatefulWidget {
@@ -35,7 +34,7 @@ class BottomNavigationBarView extends StatefulWidget {
 }
 
 class _BottomNavigationBarViewState extends State<BottomNavigationBarView> {
-  List<String> pageKeys = ["Page1", "Page2", "Page3", "Page4"];
+  List<String> pageKeys = ["Page1", "Page2", "Page3"];
 
   void _selectTab(String tabItem, int index) {
     if (tabItem == _currentPage) {
@@ -79,10 +78,6 @@ class _BottomNavigationBarViewState extends State<BottomNavigationBarView> {
       _selectTab(pageKeys[index], index);
       return;
     }
-    if (index == 3) {
-      _selectTab(pageKeys[index], index);
-      return;
-    }
   }
 
   @override
@@ -112,7 +107,6 @@ class _BottomNavigationBarViewState extends State<BottomNavigationBarView> {
             _buildOffstageNavigator("Page1"),
             _buildOffstageNavigator("Page2"),
             _buildOffstageNavigator("Page3"),
-            _buildOffstageNavigator("Page4"),
           ],
         ),
         bottomNavigationBar: Stack(
@@ -138,11 +132,6 @@ class _BottomNavigationBarViewState extends State<BottomNavigationBarView> {
                   ),
                   bottomNavBarItems(
                     index: 2,
-                    iconPath: ImageConstants.instance.svgPath.info,
-                    title: "info".tr,
-                  ),
-                  bottomNavBarItems(
-                    index: 3,
                     iconPath: ImageConstants.instance.svgPath.settings,
                     title: "settings".tr,
                   ),
@@ -221,12 +210,6 @@ class TabNavigator extends StatelessWidget {
         ),
       );
     } else if (tabItem == "Page3") {
-      child = const SizedBox(
-        child: Center(
-          child: Text("About Page"),
-        ),
-      );
-    } else if (tabItem == "Page4") {
       child =
           const SettingsView(settingsType: SettingsType.botttomNavBarSettings);
     }

@@ -58,20 +58,19 @@ class OnboardingView extends GetView<OnboardingController> {
                         const SizedBox(
                           height: 10,
                         ),
-                        Padding(
-                          padding: EdgeInsets.only(
-                            top: Utility(context).dynamicWidth(0.65),
-                          ),
-                          child: SizedBox(
-                            width: Utility(context).dynamicWidth(0.80),
-                            child: Text(
-                              onboardingController
-                                  .itemList[index].description!.tr,
-                              style: Utility(context).textTheme.bodyMedium,
-                              textAlign: TextAlign.center,
-                            ),
+                        const Expanded(child: SizedBox()),
+                        SizedBox(
+                          width: Utility(context).dynamicWidth(0.80),
+                          child: Text(
+                            onboardingController
+                                .itemList[index].description!.tr,
+                            style: Utility(context).textTheme.bodyMedium,
+                            textAlign: TextAlign.center,
                           ),
                         ),
+                        const SizedBox(
+                          height: 100,
+                        )
                       ],
                     ),
                     Positioned(
