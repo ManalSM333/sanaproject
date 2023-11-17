@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.1.5 <4.0.0'
+  sdk: '>=2.19.6 <3.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -34,13 +34,19 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
-  cupertino_icons: ^1.0.2
-  flutter_screenutil: ^5.7.0
-  flutter_svg: ^2.0.5
-  carousel_slider: ^4.2.1
-  get: ^4.6.5
-  image_picker: ^0.8.7+4
-  lottie: ^2.3.2
+  cupertino_icons: 
+  flutter_screenutil: 
+  flutter_svg:
+  carousel_slider: 
+  get: 
+  image_picker: 
+  lottie:
+  image:
+  path:
+  path_provider: 
+  tflite:
+    git:
+      url: https://github.com/B33pin/flutter_tflite
 
 dev_dependencies:
   flutter_test:
@@ -65,9 +71,11 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/tflite/
     - assets/fonts/
     - assets/icons/
     - assets/images/
+    - assets/json/
 
   fonts:
     - family: Roboto

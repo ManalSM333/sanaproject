@@ -5,6 +5,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:sanaproject/core/base/components/button/base_button.dart';
 import 'package:sanaproject/core/base/state/base_state.dart';
 import 'package:sanaproject/core/init/theme/color/color_theme.dart';
+import 'package:sanaproject/view/process/view/process_view.dart';
 
 import '../../../core/base/components/popup/general_popup.dart';
 
@@ -63,7 +64,7 @@ class ConfirmPhotoView extends GetView<HomeController> {
                     text: "warningText".tr,
                     buttonText: "understand".tr,
                     onTap: () {
-                      // Get.to(const ProcessView());
+                      Get.to(const ProcessView());
                     },
                   );
                 },
