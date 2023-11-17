@@ -64,6 +64,7 @@ class ConfirmPhotoView extends GetView<HomeController> {
                     text: "warningText".tr,
                     buttonText: "understand".tr,
                     onTap: () {
+                      Navigator.pop(context);
                       Get.to(const ProcessView());
                     },
                   );
