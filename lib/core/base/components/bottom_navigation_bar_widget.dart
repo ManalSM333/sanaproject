@@ -9,6 +9,7 @@ import 'package:sanaproject/core/base/state/base_state.dart';
 import 'package:sanaproject/core/constants/enums/setting_type_enum.dart';
 import 'package:sanaproject/core/constants/image_constants.dart';
 import 'package:sanaproject/core/init/theme/color/color_theme.dart';
+import 'package:sanaproject/view/blog/view/blog_view.dart';
 import 'package:sanaproject/view/home/view/home_view.dart';
 
 import '../../../view/onboarding/view/settings_view.dart';
@@ -204,11 +205,7 @@ class TabNavigator extends StatelessWidget {
     if (tabItem == "Page1") {
       child = const HomeView();
     } else if (tabItem == "Page2") {
-      child = const SizedBox(
-        child: Center(
-          child: Text("News Page"),
-        ),
-      );
+      child = const BlogView();
     } else if (tabItem == "Page3") {
       child =
           const SettingsView(settingsType: SettingsType.botttomNavBarSettings);
