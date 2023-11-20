@@ -8,6 +8,8 @@ import 'package:sanaproject/core/init/theme/color/color_theme.dart';
 import 'package:sanaproject/view/home/view/widget/title_with_description_widget.dart';
 import 'package:sanaproject/view/process/controller/process_controller.dart';
 
+import '../../../core/base/components/popup/general_popup.dart';
+
 class ProcessResultView extends GetView<ProcessController> {
   const ProcessResultView({super.key});
 
@@ -22,6 +24,17 @@ class ProcessResultView extends GetView<ProcessController> {
         ),
         child: GetBuilder<ProcessController>(
           builder: (processController) {
+            Future.delayed(const Duration(milliseconds: 100)).then((value) {
+              BaseDialog.show(
+                context: context,
+                text: "warningText".tr,
+                buttonText: "understand".tr,
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              );
+            });
+
             return Obx(() => Column(
                   crossAxisAlignment:
                       Get.locale.obs.value == const Locale('ar_AR')
@@ -62,19 +75,22 @@ class ProcessResultView extends GetView<ProcessController> {
                         padding: EdgeInsets.only(
                           top: Utility(context).dynamicWidthPixel(60),
                         ),
-                        child: Text(
-                          processController.output[0]['index'] == 1
-                              ? "retinopathy".tr
-                              : "healthy".tr,
-                          style: Utility(context)
-                              .textTheme
-                              .titleLarge!
-                              .copyWith(
-                                color: processController.output[0]['index'] == 1
-                                    ? AppColors().red
-                                    : AppColors().green,
-                              ),
-                        ),
+                        child: Builder(builder: (context) {
+                          return Text(
+                            processController.output[0]['index'] == 1
+                                ? "retinopathy".tr
+                                : "healthy".tr,
+                            style: Utility(context)
+                                .textTheme
+                                .titleLarge!
+                                .copyWith(
+                                  color:
+                                      processController.output[0]['index'] == 1
+                                          ? AppColors().red
+                                          : AppColors().green,
+                                ),
+                          );
+                        }),
                       ),
                     ),
                     Center(

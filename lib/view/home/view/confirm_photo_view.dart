@@ -6,9 +6,6 @@ import 'package:sanaproject/core/base/components/button/base_button.dart';
 import 'package:sanaproject/core/base/state/base_state.dart';
 import 'package:sanaproject/core/init/theme/color/color_theme.dart';
 import 'package:sanaproject/view/process/view/process_view.dart';
-
-import '../../../core/base/components/popup/general_popup.dart';
-
 import '../controller/home_controller.dart';
 import 'widget/title_with_description_widget.dart';
 
@@ -59,15 +56,7 @@ class ConfirmPhotoView extends GetView<HomeController> {
               child: BaseButton(
                 buttonText: 'confirm'.tr,
                 onPressed: () {
-                  BaseDialog.show(
-                    context: context,
-                    text: "warningText".tr,
-                    buttonText: "understand".tr,
-                    onTap: () {
-                      Navigator.pop(context);
-                      Get.to(const ProcessView());
-                    },
-                  );
+                  Get.to(const ProcessView());
                 },
               ),
             ),

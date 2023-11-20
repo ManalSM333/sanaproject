@@ -42,18 +42,10 @@ class OnboardingView extends GetView<OnboardingController> {
                             top: Utility(context).dynamicWidth(0.070),
                           ),
                           //this bit  of code is to display the icon in the onboarding screen
-                          child: SvgPicture.asset(
-                            onboardingController.itemList[index].imagePath!,
-                            width: Utility(context).dynamicWidth(0.33),
+                          child: Image.asset(
+                            "assets/images/test.jpeg",
+                            width: Utility(context).dynamicWidth(0.9),
                           ),
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        Text(
-                          onboardingController.itemList[index].title!.tr,
-                          style: Utility(context).textTheme.titleLarge,
-                          textAlign: TextAlign.center,
                         ),
                         const SizedBox(
                           height: 10,
