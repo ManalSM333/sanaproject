@@ -9,11 +9,10 @@ class Language extends Translations {
           "info": "معلومات",
           "settings": "الإعدادات",
           "next": "التالي",
-          "skip": "تخطي",
+          "skip":"لنبدأ",
           "save": "حفظ",
           "welcome": "مرحبا بكم في سَنا!",
-          "welcomeDescription":
-              "مرحبا بكم في سَنا، مشغل بواسطة الذكاء الاصطناعي!",
+          "welcomeDescription": "مرحبا بكم في سَنا، لاكتشاف اعتلال الشبكية السكّري!",
           "safety": "الأمان",
           "safetyDescription":
               "سَنا تطبيق آمن، لا يتطلب الوصول إلى أي بيانات شخصية",
@@ -59,7 +58,7 @@ class Language extends Translations {
           "info": "About",
           "settings": "Settings",
           "next": "Next",
-          "skip": "Start",
+          "skip": "Let's Start",
           "save": "Save",
           "welcome": "Welcome to SANA!",
           "welcomeDescription":
