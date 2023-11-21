@@ -205,7 +205,7 @@ class TabNavigator extends StatelessWidget {
     if (tabItem == "Page1") {
       child = const HomeView();
     } else if (tabItem == "Page2") {
-      child = const BlogView();
+      child = BlogView();
     } else if (tabItem == "Page3") {
       child =
           const SettingsView(settingsType: SettingsType.botttomNavBarSettings);
