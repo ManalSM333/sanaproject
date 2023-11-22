@@ -25,14 +25,16 @@ class ProcessResultView extends GetView<ProcessController> {
         child: GetBuilder<ProcessController>(
           builder: (processController) {
             Future.delayed(const Duration(milliseconds: 100)).then((value) {
-              BaseDialog.show(
-                context: context,
-                text: "warningText".tr,
-                buttonText: "understand".tr,
-                onTap: () {
-                  Navigator.pop(context);
-                },
-              );
+              if (processController.output[0]['index'] == 1) {
+                BaseDialog.show(
+                  context: context,
+                  text: "warningText".tr,
+                  buttonText: "understand".tr,
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                );
+              }
             });
 
             return Obx(() => Column(
