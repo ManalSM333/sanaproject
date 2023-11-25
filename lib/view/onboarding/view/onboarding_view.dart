@@ -17,7 +17,7 @@ class OnboardingView extends GetView<OnboardingController> {
       backgroundColor: AppColors().backgroundColor,
       body: Padding(
         padding: EdgeInsets.only(
-          top: Utility(context).dynamicWidthPixel(160),
+          top: Utility(context).dynamicWidthPixel(100),
         ),
         child: GetBuilder<OnboardingController>(
           init: OnboardingController(),
@@ -37,6 +37,10 @@ class OnboardingView extends GetView<OnboardingController> {
                   children: [
                     Column(
                       children: [
+                        SvgPicture.asset(
+                          onboardingController.itemList[index].imagePath!,
+                          width: Utility(context).dynamicWidth(0.33),
+                        ),
                         Padding(
                           padding: EdgeInsets.only(
                             top: Utility(context).dynamicWidth(0.070),
@@ -60,8 +64,8 @@ class OnboardingView extends GetView<OnboardingController> {
                             textAlign: TextAlign.center,
                           ),
                         ),
-                        const SizedBox(
-                          height: 100,
+                        SizedBox(
+                          height: MediaQuery.of(context).padding.bottom + 110,
                         )
                       ],
                     ),
