@@ -45,7 +45,6 @@ class ProcessResultView extends GetView<ProcessController> {
                   children: [
                     const TitleWithDescription(
                       title: "scanResult",
-                      description: "scanResultDescription",
                       isBackButtonActive: true,
                     ),
 

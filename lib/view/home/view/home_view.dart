@@ -23,8 +23,7 @@ class HomeView extends GetView<HomeController> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const TitleWithDescription(
-                title: "selectPhoto", description: "selectPhotoDescription"),
+            const TitleWithDescription(title: "selectPhoto"),
             ImageSourceWidget(
               title: "fromCamera",
               iconColor: AppColors().green,

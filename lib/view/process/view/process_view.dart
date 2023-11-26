@@ -27,7 +27,6 @@ class ProcessView extends GetView<ProcessController> {
                 children: [
                   const TitleWithDescription(
                     title: "scanning",
-                    description: "scanningPageDescription",
                     isBackButtonActive: true,
                   ),
                   Padding(

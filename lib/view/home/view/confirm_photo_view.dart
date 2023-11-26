@@ -26,9 +26,7 @@ class ConfirmPhotoView extends GetView<HomeController> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const TitleWithDescription(
-                title: "confirmPhoto",
-                description: "confirmPhotoDescription",
-                isBackButtonActive: true),
+                title: "confirmPhoto", isBackButtonActive: true),
             Padding(
               padding: EdgeInsets.only(
                 top: Utility(context).dynamicWidthPixel(90),
