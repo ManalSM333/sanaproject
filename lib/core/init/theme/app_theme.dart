@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:sanaproject/core/init/theme/text/text_theme.dart';
 import 'package:sanaproject/core/init/theme/text/text_theme_light.dart';
 import 'color/color_theme.dart';
@@ -13,8 +14,8 @@ abstract class ITheme {
 
 abstract class ThemeManager {
   static ThemeData createTheme(ITheme theme) => ThemeData(
-        fontFamily: 'Roboto',
-        textTheme: theme.textTheme.data,
+        fontFamily: GoogleFonts.merienda().fontFamily,
+        textTheme: GoogleFonts.meriendaTextTheme(),
         appBarTheme: AppBarTheme(
           backgroundColor: theme.colors.appBarColor,
           iconTheme: IconThemeData(
