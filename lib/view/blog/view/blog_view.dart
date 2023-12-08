@@ -12,15 +12,9 @@ class BlogView extends GetView<BlogController> {
     swipeHorizontal: false,
     autoSpacing: false,
     pageFling: false,
-    onError: (error) {
-      print(error.toString());
-    },
-    onPageError: (page, error) {
-      print('$page: ${error.toString()}');
-    },
-    onPageChanged: (page, total) {
-      print('page change: $page/$total');
-    },
+    onError: (error) {},
+    onPageError: (page, error) {},
+    onPageChanged: (page, total) {},
   ).fromAsset('assets/images/null.pdf');
 
   final Widget araPDF = PDF(
@@ -28,15 +22,9 @@ class BlogView extends GetView<BlogController> {
     swipeHorizontal: false,
     autoSpacing: false,
     pageFling: false,
-    onError: (error) {
-      print(error.toString());
-    },
-    onPageError: (page, error) {
-      print('$page: ${error.toString()}');
-    },
-    onPageChanged: (page, total) {
-      print('page change: $page/$total');
-    },
+    onError: (error) {},
+    onPageError: (page, error) {},
+    onPageChanged: (page, total) {},
   ).fromAsset("assets/images/null_2.pdf");
   @override
   Widget build(BuildContext context) {
