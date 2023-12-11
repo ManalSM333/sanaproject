@@ -9,10 +9,11 @@ class Language extends Translations {
           "info": "معلومات",
           "settings": "الإعدادات",
           "next": "التالي",
-          "skip":"لنبدأ",
+          "skip": "لنبدأ",
           "save": "حفظ",
           "welcome": "مرحبا بكم في سَنا!",
-          "welcomeDescription": "مرحبا بكم في سَنا، لاكتشاف اعتلال الشبكية السكّري!",
+          "welcomeDescription":
+              "مرحبا بكم في سَنا، لاكتشاف اعتلال الشبكية السكّري!",
           "safety": "الأمان",
           "safetyDescription":
               "سَنا تطبيق آمن، لا يتطلب الوصول إلى أي بيانات شخصية",
@@ -51,54 +52,6 @@ class Language extends Translations {
           "scanResultDescription":
               "الصورة المرفقة تم معاينتها بالذكاء الاصطناعي.",
           "postDetail": "تفاصيل المدونة"
-        },
-        'en_US': {
-          "scan": "Scan",
-          "blog": "News",
-          "info": "About",
-          "settings": "Settings",
-          "next": "Next",
-          "skip": "Let's Start",
-          "save": "Save",
-          "welcome": "Welcome to SANA!",
-          "welcomeDescription":
-              "Welcome to SANA, powered by Artificial Intelligence!",
-          "safety": "Safety",
-          "safetyDescription":
-              "SANA is safe, we will not collect your personal data.",
-          "offline": "Works Offline",
-          "offlineDescription":
-              "SANA works offline use without internet connection.",
-          "language": "Language",
-          "english": "English",
-          "arabic": "Arabic",
-          "selectPhoto": "Select Photo",
-          "selectPhotoDescription":
-              "Please take a photo with your camera or upload it from your gallery.",
-          "confirmPhoto": "Confirm Photo",
-          "confirmPhotoDescription":
-              "Continue with the selected photo or choose a new photo.",
-          "confirm": "Confirm",
-          "reselect": "Reselect",
-          "warningText":
-              "\"Take care of yourself so you can care for the ones you love\". From finland eye center BR. Sohar,  Please talk to us: 26846662 to set up a FREE doctor's appointment.We look forward to seeing you!",
-          "understand": "I understand",
-          "scanning": "Scanning...",
-          "scanningPageDescription":
-              "The photo you uploaded was scanned by artificial intelligence.",
-          "healthy": "Healthy",
-          "confidence": "Confidence: ",
-          "retinopathy": "Retinopathy",
-          "complete": "Complete",
-          "blogInfo": "General information about your health.",
-          "appInfo": "App Info",
-          "languageSettings": "Language Settings",
-          "fromCamera": "from Camera",
-          "fromGallery": "from Gallery",
-          "scanResult": "Scan Result",
-          "scanResultDescription":
-              "The photo you uploaded was scanned by artificial intelligence.",
-          "postDetail": "Post Detail",
-        },
+        }
       };
 }

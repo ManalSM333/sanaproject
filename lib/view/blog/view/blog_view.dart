@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cached_pdfview/flutter_cached_pdfview.dart';
 import 'package:get/get.dart';
 
-import 'package:sanaproject/core/init/theme/color/color_theme.dart';
+import 'package:sanaproject/core/init/color_theme.dart';
 import 'package:sanaproject/view/blog/controller/blog_controller.dart';
 
 class BlogView extends GetView<BlogController> {

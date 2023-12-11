@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:sanaproject/core/base/components/button/base_button.dart';
-import 'package:sanaproject/core/base/state/base_state.dart';
+import 'package:sanaproject/core/base/base_button.dart';
+import 'package:sanaproject/core/base/base_state.dart';
 
 class BaseDialog {
   static Future show({

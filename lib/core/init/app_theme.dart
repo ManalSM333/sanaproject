@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sanaproject/core/init/theme/text/text_theme.dart';
-import 'package:sanaproject/core/init/theme/text/text_theme_light.dart';
-import 'color/color_theme.dart';
+import 'package:sanaproject/core/init/text_theme.dart';
+import 'package:sanaproject/core/init/text_theme_light.dart';
+import 'color_theme.dart';
 
 abstract class ITheme {
   ITextTheme get textTheme;

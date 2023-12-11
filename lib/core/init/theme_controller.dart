@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import '../color/color_theme.dart';
+import 'color_theme.dart';
 
 class ThemeController extends GetxController {
   void changeThemeMode() {

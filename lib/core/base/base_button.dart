@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../state/base_state.dart';
+import 'base_state.dart';
 
 class BaseButton extends StatelessWidget {
   final VoidCallback? onPressed;

@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:sanaproject/core/base/state/base_state.dart';
-import 'package:sanaproject/core/init/theme/color/color_theme.dart';
+import 'package:sanaproject/core/base/base_state.dart';
+import 'package:sanaproject/core/init/color_theme.dart';
 
 class ImageSourceWidget extends StatelessWidget {
   final String title;

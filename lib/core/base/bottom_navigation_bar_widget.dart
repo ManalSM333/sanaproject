@@ -5,14 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:sanaproject/core/base/state/base_state.dart';
-import 'package:sanaproject/core/constants/enums/setting_type_enum.dart';
+import 'package:sanaproject/core/base/base_state.dart';
+
 import 'package:sanaproject/core/constants/image_constants.dart';
-import 'package:sanaproject/core/init/theme/color/color_theme.dart';
+import 'package:sanaproject/core/init/color_theme.dart';
 import 'package:sanaproject/view/blog/view/blog_view.dart';
 import 'package:sanaproject/view/home/view/home_view.dart';
-
-import '../../../view/onboarding/view/settings_view.dart';
 
 GlobalKey<ScaffoldState> homeKey = GlobalKey<ScaffoldState>();
 int? selectedIndex;
@@ -35,7 +33,7 @@ class BottomNavigationBarView extends StatefulWidget {
 }
 
 class _BottomNavigationBarViewState extends State<BottomNavigationBarView> {
-  List<String> pageKeys = ["Page1", "Page2", "Page3"];
+  List<String> pageKeys = ["Page1", "Page2"];
 
   void _selectTab(String tabItem, int index) {
     if (tabItem == _currentPage) {
@@ -75,10 +73,6 @@ class _BottomNavigationBarViewState extends State<BottomNavigationBarView> {
       _selectTab(pageKeys[index], index);
       return;
     }
-    if (index == 2) {
-      _selectTab(pageKeys[index], index);
-      return;
-    }
   }
 
   @override
@@ -107,7 +101,6 @@ class _BottomNavigationBarViewState extends State<BottomNavigationBarView> {
           children: [
             _buildOffstageNavigator("Page1"),
             _buildOffstageNavigator("Page2"),
-            _buildOffstageNavigator("Page3"),
           ],
         ),
         bottomNavigationBar: Stack(
@@ -122,19 +115,14 @@ class _BottomNavigationBarViewState extends State<BottomNavigationBarView> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   bottomNavBarItems(
-                    index: 0,
-                    iconPath: ImageConstants.instance.svgPath.eye_btn,
-                    title: 'scan'.tr,
-                  ),
-                  bottomNavBarItems(
                     index: 1,
                     iconPath: ImageConstants.instance.svgPath.blog,
                     title: 'blog'.tr,
                   ),
                   bottomNavBarItems(
-                    index: 2,
-                    iconPath: ImageConstants.instance.svgPath.settings,
-                    title: "settings".tr,
+                    index: 0,
+                    iconPath: ImageConstants.instance.svgPath.eye_btn,
+                    title: 'scan'.tr,
                   ),
                 ],
               ),
@@ -204,13 +192,9 @@ class TabNavigator extends StatelessWidget {
     Widget? child;
     if (tabItem == "Page1") {
       child = const HomeView();
-    } else if (tabItem == "Page2") {
+    } else {
       child = BlogView();
-    } else if (tabItem == "Page3") {
-      child =
-          const SettingsView(settingsType: SettingsType.botttomNavBarSettings);
     }
-
     return Navigator(
       key: navigatorKey,
       onGenerateRoute: (routeSettings) {

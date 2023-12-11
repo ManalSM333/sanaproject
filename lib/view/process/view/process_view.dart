@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:sanaproject/core/base/state/base_state.dart';
+import 'package:sanaproject/core/base/base_state.dart';
 import 'package:sanaproject/core/constants/data_constants.dart';
-import 'package:sanaproject/core/init/theme/color/color_theme.dart';
+import 'package:sanaproject/core/init/color_theme.dart';
 import 'package:sanaproject/view/home/view/widget/title_with_description_widget.dart';
 import 'package:sanaproject/view/process/controller/process_controller.dart';
 

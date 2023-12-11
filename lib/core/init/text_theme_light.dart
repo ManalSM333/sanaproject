@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../color/color_theme.dart';
+import 'color_theme.dart';
 import 'text_theme.dart';
 
 class TextThemeLight implements ITextTheme {

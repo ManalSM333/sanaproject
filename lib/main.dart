@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:sanaproject/view/splash/view/splash_view.dart';
-import 'core/base/state/base_state.dart';
+import 'package:sanaproject/core/base/bottom_navigation_bar_widget.dart';
+import 'core/base/base_state.dart';
 import 'core/constants/app_constants.dart';
-import 'core/init/language/language.dart';
-import 'core/init/theme/app_theme.dart';
+import 'core/init/language.dart';
+import 'core/init/app_theme.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 Future<void> main() async {
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
                 ],
               );
             },
-            locale: Get.deviceLocale,
+            locale: const Locale('ar', 'AR'),
             translations: Language(),
             title: ApplicationConstants.APPNAME,
             themeMode: ThemeMode.light,
@@ -56,6 +56,7 @@ class MyApp extends StatelessWidget {
               Locale('ar', 'AR'),
               Locale('en', 'US'),
             ],
+
             localizationsDelegates: const [
               GlobalMaterialLocalizations.delegate,
               GlobalWidgetsLocalizations.delegate,
@@ -68,7 +69,7 @@ class MyApp extends StatelessWidget {
             opaqueRoute: Get.isOpaqueRouteDefault,
             popGesture: Get.isPopGestureEnable,
             transitionDuration: Get.defaultTransitionDuration,
-            home: const SplashView(),
+            home: const BottomNavigationBarView(selectedIndex: 0),
           ),
         );
       },

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sanaproject/core/base/state/base_state.dart';
-import '../../init/theme/color/color_theme.dart';
+import 'package:sanaproject/core/base/base_state.dart';
+import '../init/color_theme.dart';
 
 class BaseSelectedListViewWidget extends StatelessWidget {
   final String buttonText;

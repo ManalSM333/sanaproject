@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:sanaproject/core/base/state/base_state.dart';
+import 'package:sanaproject/core/base/base_state.dart';
 import 'package:sanaproject/core/constants/image_constants.dart';
-import 'package:sanaproject/core/init/theme/color/color_theme.dart';
+import 'package:sanaproject/core/init/color_theme.dart';
 import 'package:sanaproject/view/home/view/widget/image_source_boxes.dart';
 import '../controller/home_controller.dart';
 import 'widget/title_with_description_widget.dart';

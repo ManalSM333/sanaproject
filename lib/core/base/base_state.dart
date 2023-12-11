@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import '../../constants/enums/device_type_enum.dart';
+import '../constants/device_type_enum.dart';
 
 abstract class BaseState<T extends StatefulWidget> extends State<T> {
   ThemeData get themeData => Theme.of(context);
