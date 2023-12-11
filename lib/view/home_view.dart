@@ -4,9 +4,10 @@ import 'package:image_picker/image_picker.dart';
 import 'package:sanaproject/core/base/base_state.dart';
 import 'package:sanaproject/core/constants/image_constants.dart';
 import 'package:sanaproject/core/init/color_theme.dart';
-import 'package:sanaproject/view/home/view/widget/image_source_boxes.dart';
-import '../controller/home_controller.dart';
-import 'widget/title_with_description_widget.dart';
+import 'package:sanaproject/view/image_source_boxes.dart';
+import 'package:sanaproject/view/title_with_description_widget.dart';
+
+import 'home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
   const HomeView({super.key});

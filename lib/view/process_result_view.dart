@@ -5,10 +5,10 @@ import 'package:sanaproject/core/base/base_button.dart';
 import 'package:sanaproject/core/base/base_state.dart';
 import 'package:sanaproject/core/base/bottom_navigation_bar_widget.dart';
 import 'package:sanaproject/core/init/color_theme.dart';
-import 'package:sanaproject/view/home/view/widget/title_with_description_widget.dart';
-import 'package:sanaproject/view/process/controller/process_controller.dart';
+import 'package:sanaproject/view/process_controller.dart';
+import 'package:sanaproject/view/title_with_description_widget.dart';
 
-import '../../../core/base/general_popup.dart';
+import '../core/base/general_popup.dart';
 
 class ProcessResultView extends GetView<ProcessController> {
   const ProcessResultView({super.key});

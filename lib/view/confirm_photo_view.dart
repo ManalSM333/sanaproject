@@ -6,8 +6,8 @@ import 'package:sanaproject/core/base/base_button.dart';
 import 'package:sanaproject/core/base/base_state.dart';
 import 'package:sanaproject/core/init/color_theme.dart';
 import 'package:sanaproject/view/process/view/process_view.dart';
-import '../controller/home_controller.dart';
-import 'widget/title_with_description_widget.dart';
+import 'home_controller.dart';
+import 'title_with_description_widget.dart';
 
 class ConfirmPhotoView extends GetView<HomeController> {
   final XFile? xFileImage;

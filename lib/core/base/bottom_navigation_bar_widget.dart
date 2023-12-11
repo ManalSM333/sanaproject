@@ -9,8 +9,8 @@ import 'package:sanaproject/core/base/base_state.dart';
 
 import 'package:sanaproject/core/constants/image_constants.dart';
 import 'package:sanaproject/core/init/color_theme.dart';
-import 'package:sanaproject/view/blog/view/blog_view.dart';
-import 'package:sanaproject/view/home/view/home_view.dart';
+import 'package:sanaproject/view/blog_view.dart';
+import 'package:sanaproject/view/home_view.dart';
 
 GlobalKey<ScaffoldState> homeKey = GlobalKey<ScaffoldState>();
 int? selectedIndex;
